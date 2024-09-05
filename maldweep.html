@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldives Tourism</title>
+    <link rel="stylesheet" href="maldweep.css">
+</head>
+
+<body>
+    <header>
+        <h1> MALDIVES </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#visit-info">Visit Information</a></li>
+                <button id="mode">Mode</button>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <script>
+        let modeBtn = document.querySelector("#mode");
+        let body = document.querySelector("body");
+        let curMode = "light";
+        modeBtn.addEventListener("click", () => {
+            if (curMode === "light") {
+                curMode = "Dark";
+                body.classList.add("Dark");
+                body.classList.remove("light");
+                
+            }
+            else {
+                curMode = "light";
+                body.classList.add("light");
+
+                body.classList.remove("Dark");
+            }
+            console.log(curMode);
+        });
+
+    </script>
+    <main>
+        <section id="about">
+            <h2>About Maldives</h2>
+            <p>
+                The Maldives is an island nation located in the Indian Ocean, southwest of Sri Lanka and India. Known
+                for its stunning natural beauty, clear turquoise waters, white sandy beaches, and vibrant marine life,
+                <br>At the Top, Burj Khalifa SKY (Level 148): This is the world's highest observation deck, situated at
+                555 meters (1,821 feet) above ground. Visitors can enjoy breathtaking views of Dubai’s skyline and
+                beyond. It also features a premium lounge and offers a guided tour, including refreshments.
+                At the Top (Levels 124 and 125)<br> Located at 456 meters (1,496 feet) above the ground, these
+                observation decks offer spectacular 360-degree views of the city, desert, and ocean. The deck on the
+                124th floor includes an outdoor terrace, while the 125th floor offers a more spacious indoor viewing
+                area.
+                .
+            </p>
+            <hr><br>
+            <center><video class="video" width="100% " heigth="100%" loop muted autoplay autoplay="autoplay">
+                    <source src="istockphoto-1397800707-640_adpp_is.mp4" type="video/mp4">
+                </video> </center>
+
+        </section>
+        <hr>
+        <section id="attractions">
+            <h2>Attractions</h2>
+            <p>
+            <h3>Geography:</h3>
+            Archipelago: The Maldives consists of approximately 1,200 coral islands grouped into 26 natural atolls,
+            which are spread over about 90,000 square kilometers (34,750 square miles). Only around 200 of these islands
+            are inhabited.
+            <h3>Climate:</h3>
+            Tropical Climate: The Maldives has a tropical monsoon climate, characterized by warm temperatures
+            year-round, with an average temperature of around 30°C (86°F).
+            Monsoons: There are two distinct seasons in the Maldives: the dry season (northeast monsoon) from
+            November to April, and the wet season (southwest monsoon) from May to October, with heavier rainfall and
+            higher humidity.
+
+            <h3> History and Culture:</h3>
+            Early Settlement: The Maldives has a rich history dating back over 2,500 years, with early settlers believed
+            to be from southern India and Sri Lanka. The islands have been influenced by various cultures, including
+            Indian, Sri Lankan, Arab, and African.
+            </p>
+        </section>
+        <hr>
+
+    </main>
+
+    <footer>
+        <div id="visit-info">
+            <h2> Visit Information</h2>
+            <p>Opening Hours: 6:00 AM - 7:00 PM (Closed on Fridays)</p>
+            <p>Entry Fee: INR 50 for Indians, INR 1100 for Foreigners</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
